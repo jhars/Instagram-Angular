@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="instangularApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- bootstrap css -->
+  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <title>Instangular</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body ng-controller="InstaCtrl">
+
+  <div id="main-div">
+
+    <div>
+      <h3>
+        {{insta}}<br>  
+      </h3>
+      (This App Calls the Instagram API)
+      <hr>
+    </div>
+    
+    <div>
+      <input id="insta-input"type="text" ng-model="tag" name="search">
+      <button ng-click="getGrams()">Search</button>
+      <div>
+        While your here, feel free to check out my 
+        <a href="http://lax360.bitballoon.com/">
+          3D Interactive Helmet App!
+        </a>
+      </div>  
+    </div>
+    
+  	<div ng-repeat="photo in photos">
+  		<img ng-src="{{ photo.images.standard_resolution.url }}" alt="image">
+  	</div>
+  
+  </div>
+
+
+  <!-- angular -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.min.js"></script>
+  <!-- angular-resource -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-resource.min.js"></script>
+  <!-- custom script -->
+  <script type="text/javascript" src="app.js"></script>
+
+
+
+</body>
+</html>

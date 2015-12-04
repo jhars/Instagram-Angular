@@ -1,0 +1,76 @@
+
+body {
+  background: #292929;
+  position: absolute;
+  margin: 0; padding: 3%;
+  color: white;
+}
+
+#insta-input {
+  color:black;
+}
+
+
+#next {
+	color:white;
+
+}
+
+#helmet {
+    
+    background-image: url("../images/bgFRAME.png");
+    background-repeat: no-repeat;
+}
+
+#designframe {
+	background-image: url("../images/DesignBG.png");
+	background-repeat: no-repeat;
+}
+/*
+html {
+  touch-action: none;
+  content-zooming: none;
+}*/
+
+img#visorUI {
+	position: absolute;
+	    left: 1450px;
+	    top: 200px;
+}
+
+img#maskUI {
+
+
+    position: absolute;
+        left: 1075px;
+        top: 200px;
+}
+
+img#panelUI {
+
+    position: absolute;
+        left: 1450px;
+        top: 600px;
+}
+
+img#strapUI {
+position: absolute;
+    left: 1550px;
+    top: 400px;
+}
+
+img#chinUI {
+	position: absolute;
+	    left: 1075px;
+	    top: 575px;
+
+
+}
+
+img#wrapUI {
+position: absolute;
+    left: 1200px;
+    top: 350px;
+}
+
+
